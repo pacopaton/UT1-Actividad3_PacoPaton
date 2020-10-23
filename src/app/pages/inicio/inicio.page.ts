@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosPage } from '../datos/datos.page';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
