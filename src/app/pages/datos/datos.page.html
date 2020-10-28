@@ -5,8 +5,31 @@
 </ion-header>
 
 <ion-content>
-  <ion-text>Nombre: Francisco</ion-text>
-  <ion-text>Apellidos: Patón Antequera</ion-text>
-  <ion-text>Curso: 2ºDam</ion-text>
-  <ion-text>Dni: 45678913M</ion-text>
+ 
+  <ion-back-button defaultHref="/inicio" icon="arrow-undo-circle-outline" color="danger" type="button" text="inicio">
+
+  </ion-back-button >
+
+  
+      <ion-item >
+        <ion-label color="success">Nombre</ion-label>
+       <ion-input [ngModel]="Nombre"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label color="warning">Apellidos</ion-label>
+        <ion-input [ngModel]="Apellidos"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label color="tertiary">Localidad</ion-label>
+        <ion-input [ngModel] = "Localidad"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label color="danger">Email</ion-label>
+        <ion-input type="email" aria-placeholder="Email:" [ngModel]="Correo"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label color="primary">Introduce 4 caracteres</ion-label>
+        <ion-input type="password" maxlength="4" placeholder="intentalo"></ion-input>
+    </ion-item>
+  
 </ion-content>

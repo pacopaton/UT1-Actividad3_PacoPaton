@@ -9,9 +9,17 @@ const routes: Routes = [
     component: ModulosPage
   },
   {
-    path: 'asignaturas',
-    loadChildren: () => import('./asignaturas/asignaturas.module').then( m => m.AsignaturasPageModule)
-  }
+    path: 'dam1',
+    loadChildren: () => import('../dam1/dam1-routing.module').then( m => m.Dam1PageRoutingModule)
+  },
+  {
+    path: 'dam2',
+    loadChildren: () => import('../dam2/dam2-routing.module').then( m => m.Dam2PageRoutingModule)
+  },
+  {
+    path: 'fct',
+    loadChildren: () => import('../fct/fct-routing.module').then( m => m.FctPageRoutingModule)
+  },
 ];
 
 @NgModule({

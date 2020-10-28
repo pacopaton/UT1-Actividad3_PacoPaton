@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'modulos',
     loadChildren: () => import('./pages/modulos/modulos.module').then( m => m.ModulosPageModule)
   },
+  {
+    path: 'dam1',
+    loadChildren: () => import('./pages/dam1/dam1.module').then( m => m.Dam1PageModule)
+  },
+  {
+    path: 'dam2',
+    loadChildren: () => import('./pages/dam2/dam2.module').then( m => m.Dam2PageModule)
+  },
+  {
+    path: 'fct',
+    loadChildren: () => import('./pages/fct/fct.module').then( m => m.FctPageModule)
+  },
 ];
 
 @NgModule({

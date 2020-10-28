@@ -5,22 +5,30 @@
 </ion-header>
 
 <ion-content>
+  
   <ion-tabs>
+  
     <ion-tab-bar slot="bottom" routerLink="pages/modules/asignaturas">
-      <ion-tab-button tab="DAM1">
+      <ion-tab-button tab="dam1">
         <ion-icon name="folder-open-outline"></ion-icon>
-        <ion-label>Programación</ion-label>
+        <ion-label>DAM1</ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="DAM2">
+      <ion-tab-button tab="dam2">
         <ion-icon name="laptop-outline"></ion-icon>
-        <ion-label>Lenguaje de Marcas</ion-label>
+        <ion-label>DAM2</ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="FCT">
+      <ion-tab-button tab="fct">
         <ion-icon name="ribbon-outline"></ion-icon>
         <ion-label>FCT</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
+  
   </ion-tabs>
+
+
+  <ion-back-button defaultHref="/inicio" icon="play-skip-back-circle-outline" color="medium" type="submite" text="Inicio">
+    
+  </ion-back-button >
 </ion-content>
