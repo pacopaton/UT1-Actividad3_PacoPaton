@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>modulos</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  
-  <ion-tabs>
-  
-    <ion-tab-bar slot="bottom" routerLink="pages/modules/asignaturas">
+
+  <ion-tabs slots="bottom">
+    <ion-tab-bar slot="bottom" tab="dam1" color="success">
       <ion-tab-button tab="dam1">
         <ion-icon name="folder-open-outline"></ion-icon>
         <ion-label>DAM1</ion-label>
@@ -24,11 +17,12 @@
         <ion-label>FCT</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
-  
-  </ion-tabs>
 
-
-  <ion-back-button defaultHref="/inicio" icon="play-skip-back-circle-outline" color="medium" type="submite" text="Inicio">
     
+  </ion-tabs>
+  <ion-back-button defaultHref="/inicio" icon="arrow-undo-circle-outline" color="danger" type="button" text="inicio">
+
   </ion-back-button >
 </ion-content>
+
+ 

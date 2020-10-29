@@ -5,7 +5,65 @@
 </ion-header>
 
 <ion-content>
-  <ion-back-button defaultHref="/modulos" icon="arrow-undo-circle-outline" color="dark" type="button" text="modulos">
 
-  </ion-back-button >
+<ion-list>
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvCgbQ9r3rrrbJWkeBeP1K5AIBs5-p0opEgw&usqp=CAU">
+    </ion-avatar></ion-label>
+    <ion-input disabled>PROGRAMACIÓN</ion-input>
+    <ion-checkbox color="primary" (click)="presentToast()"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://cnnespanol.cnn.com/wp-content/uploads/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=320&h=240&crop=1">
+    </ion-avatar></ion-label>
+    <ion-input disabled> LENGUAJES DE MARCAS </ion-input>
+    <ion-checkbox color="danger" (click)="presentToast2()"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/113AC/production/_113427507_solar_orbiter_eui-fullsun01.jpg">
+    </ion-avatar></ion-label>
+    <ion-input disabled> ENTORNOS </ion-input>
+    <ion-checkbox color="light" (click)="presentToast3()"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://www.cursosbonificadosevolution.es/wp-content/uploads/2015/07/cursos_informatica_bonificados.jpg">
+    </ion-avatar></ion-label>
+    <ion-input disabled> BASE DE DATOS </ion-input>
+    <ion-checkbox color="light" (click)="presentToast4()"></ion-checkbox>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="data:image/png;base64,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">
+    </ion-avatar></ion-label>
+    <ion-input disabled> SISTEMAS INFORMÁTICOS </ion-input>
+    <ion-checkbox color="dark" (click)="presentToast5()"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://www.convalidacionfol.com/wp-content/uploads/2018/02/importancia-fol.jpg">
+    </ion-avatar></ion-label>
+    <ion-input disabled> FOL </ion-input>
+    <ion-checkbox color="success" (click)="presentToast6()"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><ion-avatar>
+      <img src="https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2020/05/27/aprender-ingles-desde-pequenos-permite-afianzar-mejor-los-conocimientos.jpeg">
+    </ion-avatar></ion-label>
+    <ion-input disabled> INGLÉS </ion-input>
+    <ion-checkbox color="medium" (click)="presentToast7()"></ion-checkbox>
+  </ion-item>
+
+</ion-list>
+
 </ion-content>

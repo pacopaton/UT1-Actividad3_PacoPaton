@@ -5,7 +5,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-back-button defaultHref="/modulos" icon="chevron-back-outline" color="dark" type="button" text="modulos">
-
-  </ion-back-button >
+<ion-list *ngFor="let variable of variables">
+  <ion-item>
+    <ion-label>
+      <ion-avatar>
+        <img src="{{variable.id}}" alt="">
+      </ion-avatar></ion-label>
+      <ion-input>
+        {{variable.nombre}}
+      </ion-input>
+    <ion-checkbox color={{variable.c}}>
+    
+    </ion-checkbox>
+  </ion-item>
+  </ion-list>
 </ion-content>
