@@ -2,6 +2,15 @@
   <ion-toolbar>
     <ion-title>fct</ion-title>
   </ion-toolbar>
+
+  <ion-item>
+    <ion-button slot="end">
+      <ion-icon name="star-half-outline" slot="icon-only" color="warning"></ion-icon>
+      sin función</ion-button>
+  <ion-button slot="end">
+    <ion-icon name="help-circle-outline" slot="icon-only" color="medium"></ion-icon>
+    preguntas</ion-button>
+  </ion-item>
 </ion-header>
 
 <ion-content>
@@ -9,7 +18,7 @@
     <ion-item>
       <ion-icon name="airplane-outline" slot="start"></ion-icon>
       <ion-label>Esto es una prueba de tarjeta</ion-label>
-      <ion-button fill="outline" slot="end">Ver</ion-button>
+      <ion-button fill="outline" slot="end">entrar</ion-button>
     </ion-item>
   </ion-card>
 
@@ -17,7 +26,7 @@
     <ion-item>
       <ion-icon name="barbell-outline" slot="start"></ion-icon>
       <ion-label>Esto es una prueba de tarjeta</ion-label>
-      <ion-button fill="outline" slot="end">Ver</ion-button>
+      <ion-button fill="outline" slot="end">aceptar</ion-button>
     </ion-item>
   </ion-card>
 
@@ -25,7 +34,7 @@
     <ion-item>
       <ion-icon name="briefcase-outline" slot="start"></ion-icon>
       <ion-label>Esto es una prueba de tarjeta</ion-label>
-      <ion-button fill="outline" slot="end">Ver</ion-button>
+      <ion-button fill="outline" slot="end">enviar</ion-button>
     </ion-item>
   </ion-card>
 
@@ -33,21 +42,26 @@
     <ion-item>
       <ion-icon name="apps-outline" slot="start"></ion-icon>
       <ion-label>Esto es una prueba de tarjeta</ion-label>
-      <ion-button fill="outline" slot="end">Ver</ion-button>
+      <ion-button fill="outline" slot="end">recibir</ion-button>
     </ion-item>
   </ion-card>
 
-
-
-  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
     <ion-fab-button>
-      <ion-icon name="apps"></ion-icon>
+      <ion-icon name="share"></ion-icon>
     </ion-fab-button>
-
-    <ion-icon name="apps"></ion-icon>
-       <ion-fab-list side="end">
-        <ion-fab-button><ion-icon name="briefcase"></ion-icon></ion-fab-button>
-       </ion-fab-list>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button  href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button  href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button  href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
   </ion-fab>
 
 </ion-content>
